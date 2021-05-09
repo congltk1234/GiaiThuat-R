@@ -1,0 +1,4 @@
+STT	Ten	Tuoi	Gioitinh
+1	Trâm	19	Omoi
+2	Công	19	Nam
+3	Đạt	19	Nam

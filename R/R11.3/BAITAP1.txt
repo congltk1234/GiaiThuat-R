@@ -1,0 +1,8 @@
+Farm	Month	Year	Sex	LengthClass	LengthCT	Ecervi	Tb
+MO	11	0	1	1	75	0	0
+MO	7	0	2	1	85	0	0
+MO	7	1	2	1	91.6	0	1
+MO	NA	NA	2	1	95	NA	NA
+LN	9	3	1	1	NA	0	0
+SE	9	3	2	1	105.5	0	0
+QM	11	2	2	1	106	0	0

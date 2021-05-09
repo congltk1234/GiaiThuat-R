@@ -1,0 +1,4 @@
+STT	Ten	Tuoi	Gioitinh
+1	Tram	19	Omoi
+2	Cong	19	Nam
+3	Dat	19	Nam
