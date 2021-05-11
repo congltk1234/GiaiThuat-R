@@ -26,8 +26,8 @@ help("ifelse")
 N=length(owls$Nest)
 for (i in 1:N){
   ifelse(owls$FoodTreatment[i] == 'Deprived', #Điều kiện
-         owls$NestNight[i] <- paste(owls$Nest[i], "2",sep = "_"), #Lệnh thực hiện nếu đúng
-         owls$NestNight[i] <- paste(owls$Nest[i], "1",sep = "_")) #Lệnh thực hiện nếu sai
+         owls$NestNight[i] <- paste(owls$Nest[i], "Deprived",sep = "_"), #Lệnh thực hiện nếu đúng
+         owls$NestNight[i] <- paste(owls$Nest[i], "Satiated",sep = "_")) #Lệnh thực hiện nếu sai
 }
 # hàm ifelse khi FoodTreatment là satiated thì paste vào cột mới là NestNight 
 # dữ liệu là cột Nest và _1 và ngược lại là _2
@@ -48,4 +48,3 @@ for (i in 1:N){
        main = NestNight.i)             # Tiêu đề
   dev.off()
 }
-  
