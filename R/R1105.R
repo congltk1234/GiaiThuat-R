@@ -19,23 +19,23 @@ for (i in 1:27){
 
 
 #B. 
-# Exercise 2
-ifelse(owls$FoodTreatment == "Satiaded", owls$NestNight <- paste(owls$Nest, "1",sep = "_"),
-       owls$NestNight <- paste(owls$Nest, "2",sep = "_"))
-head(owls)                             
-#You can also do this with: owls$NestNight <- paste(owls$Nest, owls$FoodTreatment,sep = "_") 
+ifelse(owls$FoodTreatment == "Satiated", owls$NestNight <- paste(owls$ï..Nest, "1",sep = "_"), owls$NestNight <- paste(owls$ï..Nest, "2",sep = "_"))
+# hàm ifelse khi FoodTreatment là satiated thì paste vào cột mới là NestNight 
+# dữ liệu là cột Nest và _1 và ngược lại là _2
+head(owls)#in ra những cột đầu
 
-AllNestsNights <- unique(owls$NestNight)
-N <- length(AllNestsNights)
-for (i in 1:N) {
-  NestNight.i <- as.character(AllNestsNights[i])
+AllNestsNights= unique(owls$NestNight)
+N=length(AllNestsNights)  # Các phần tử trong AllNestsNights
+for (i in 1:N){
+  NestNight.i = as.character(AllNestsNights[i]) # đưa về dạng character
   print(NestNight.i)
-  owlsi <- owls[owls$NestNight == NestNight.i ,]
-  YourFileName <- paste(NestNight.i, ".jpg", sep = "") 
-  #jpeg(file = YourFileName)
-  plot(x = owlsi$ArrivalTime , y = owlsi$NegPerChick, 
-       xlab = "Arrival Time",
-       ylab = "Sibling negotiation",
-       main = NestNight.i)
+  owlsi = owls[owls$NestNight == NestNight.i ,]
+  YourFileName = paste(NestNight.i,".jpg",sep = "")
+  jpeg(file = YourFileName)
+  plot(x = owlsi$ArrivalTime,y=owlsi$NegPerChick,
+       xlab ="Arrival Time",           # tên cột x
+       ylab ="Sibling negotiation",    # Tên cột y
+       main = NestNight.i)             # Tiêu đề
+  dev.off()
 }
   
