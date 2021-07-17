@@ -6,8 +6,6 @@ ucln<-function(a,b){
   ucln(b,a%%b)
 }
 
-a<-readline('Nhap a:')
-a<-as.integer(a)
-b<-readline('Nhap b:')
-b<-as.integer(b)
+a<-15
+b<-20
 cat('UCLN của',a,'và',b,'là:',ucln(a,b))

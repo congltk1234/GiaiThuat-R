@@ -1,15 +1,11 @@
 library(dequer)
 s <- stack()
-for (i in 1:3) push(s, i)
+# Them gia tri vao nganxep
+for (i in 1:5) push(s, i)
 str(s)
-## stack of 3
-##  $ : int 3
-##  $ : int 2
-##  $ : int 1
 
+#Lay 1 phantu ra khoi nganxep
 pop(s)
-## [1] 3
+## [1] 5
+#Nganxep hientai
 str(s)
-## stack of 2
-##  $ : int 2
-##  $ : int 1
