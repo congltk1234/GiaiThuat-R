@@ -14,9 +14,9 @@ mmerge<-function(a,b) {
 mmergesort<-function(A) {
   if(length(A)>1) {
     q <- ceiling(length(A)/2)
-    a <- mmergesort(A[1:q])
-    b <- mmergesort(A[(q+1):length(A)])
-    mmerge(a,b)
+    a <- mmergesort(A[1:q]) #Lấy nửa đầu và típ tục đệ qy chia chuỗi
+    b <- mmergesort(A[(q+1):length(A)]) #Lấy nửa cuối và típ tục đệ qy chia chuỗi
+    mmerge(a,b) #Gộp nửa đầu nửa cuối sau khi đã sort
   } else {
     A
   }}

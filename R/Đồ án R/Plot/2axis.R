@@ -89,10 +89,10 @@ fig <- fig %>% layout(
           step = "day",
           stepmode = "todate"),
         list(
-          count = 1,
-          label = "1 mo",
-          step = "month",
-          stepmode = "backward"),
+          count = 14,
+          label = "2week",
+          step = "day",
+          stepmode = "todate"),
         list(
           count = 3,
           label = "3 mo",
@@ -102,11 +102,6 @@ fig <- fig %>% layout(
           count = 6,
           label = "6 mo",
           step = "month",
-          stepmode = "backward"),
-        list(
-          count = 1,
-          label = "1 yr",
-          step = "year",
           stepmode = "backward"))),
     
     rangeslider = list(type = "date")),

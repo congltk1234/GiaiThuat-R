@@ -77,7 +77,7 @@ recover <- recover %>%
 recover <- recover %>% filter(country_region=='Vietnam')
 recover <-recover[c('date','recovered_n')]
 Vietnam <- merge(Vietnam,recover,by="date")
-
+#https://rpubs.com/phamdinhkhanh/381826
 
 
 fig <- plot_ly(Vietnam,x = ~date)
